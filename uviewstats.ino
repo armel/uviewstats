@@ -17,7 +17,7 @@ void loop() {
   char needle[] = ",";
   char *result, *load_last, *mem = NULL;
   
-  byte i, width, core, load;
+  byte i, width, locate, shift, core, load;
 
   input = read_input();  
   input.substring(1).toCharArray(data, 255);
@@ -49,7 +49,7 @@ void loop() {
     uView.lineH(0, 8, 64);
     uView.display();
 
-    scroll_text("Version 1.1 @fauveauarmel", 0, 64, 16, 10);
+    scroll_text("Version 1.2 @fauveauarmel", 0, 64, 16, 10);
 
     break;
 
@@ -65,9 +65,15 @@ void loop() {
     width--;
     result = strtok(NULL, needle);
 
+    shift = int((64 - (12 * core)) / (core + 1));
+    locate = shift;
+    
     while (result != NULL) {
-      uView.setCursor((width * i) + i + 1, 0);
-      uView.print(result);
+      if(core < 6) {
+        uView.setCursor(locate, 0);
+        uView.print(result);
+        locate += shift + 12;
+      }
       load = atoi(result);
       load = map(load, 0, 100, 1, 40);
 
