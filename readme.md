@@ -5,9 +5,9 @@ uViewStats is a system monitor: CPU, Memory, Disk and Network. It uses the Micro
 # Quickstart
 
 ## Prerequisites
-First, you need to install [**Python**] (https://www.python.org), if you haven't done so already. 
+First, you need to install [**Python**](https://www.python.org), if you haven't done so already. 
 
-Second, install **pip**, a tool for installing and managing Python packages. It works on Unix/Linux, OS X, and Windows. To install or upgrade pip, securely download [get-pip.py] (https://bootstrap.pypa.io/get-pip.py). Then run the following (which may require administrator access, so you can use sudo):
+Second, install **pip**, a tool for installing and managing Python packages. It works on Unix/Linux, OS X, and Windows. To install or upgrade pip, securely download [get-pip.py](https://bootstrap.pypa.io/get-pip.py). Then run the following (which may require administrator access, so you can use sudo):
 
 ~~~
 $ sudo python get-pip.py
@@ -24,7 +24,7 @@ $ sudo pip install pyserial
 
 First, start Arduino IDE, open `uviewstats.ino`, compile and upload it.
 
-Second, start your favorite editor (personnaly, I'm using [SublimeText] (http://www.sublimetext.com/)), open `uviewstats.py` and set the `PORT` constant.
+Second, start your favorite editor (personnaly, I'm using [SublimeText](http://www.sublimetext.com/)), open `uviewstats.py` and set the `PORT` constant.
 
 Third, open a `Terminal` and start the Python script:
 
