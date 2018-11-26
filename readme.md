@@ -1,10 +1,10 @@
-#Description
+# Description
 
 uViewStats is a system monitor: CPU, Memory, Disk and Network. It uses the MicroView to display information in real time.
 
-#Quickstart
+# Quickstart
 
-##prerequisites
+## prerequisites
 First, you need to install [**Python**] (https://www.python.org), if you haven't done so already. 
 
 Second, install **pip**, a tool for installing and managing Python packages. It works on Unix/Linux, OS X, and Windows. To install or upgrade pip, securely download [get-pip.py] (https://bootstrap.pypa.io/get-pip.py). Then run the following (which may require administrator access, so you can use sudo):
@@ -20,7 +20,7 @@ $ sudo pip install psutil
 $ sudo pip install pyserial
 ~~~
 
-##Installation
+## Installation
 
 First, start Arduino IDE, open `uviewstats.ino`, compile and upload it.
 
@@ -34,7 +34,7 @@ $ python uviewstats.py
 
 That’s all !
 
-#License
+# License
 
 ~~~
 The MIT License
